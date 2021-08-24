@@ -29,18 +29,18 @@ function setup() {
   block10 = new Box(600,280,40,60);
   block11 = new Box(640,280,40,60);
   block12 = new Box(680,280,40,60);
-  block13 = new Box(560,220,40,60);
-  block14 = new Box(600,220,40,60);
-  block15 = new Box(640,220,40,60);
-  block16 = new Box(600,140,40,60);
-  block17 = new Box(960,120,40,60);
-  block18 = new Box(1000,120,40,60);
-  block19 = new Box(1040,120,40,60);
-  block20 = new Box(1000,60,40,60);
+  block13 = new Box(560,240,40,60);
+  block14 = new Box(600,240,40,60);
+  block15 = new Box(640,240,40,60);
+  block16 = new Box(600,160,40,60);
+  block17 = new Box(960,200,40,60);
+  block18 = new Box(1000,200,40,60);
+  block19 = new Box(1040,200,40,60);
+  block20 = new Box(1000,140,40,60);
 
   polygon = Bodies.circle(50,200,20);
   World.add(world,polygon);
-  slingShot = new SlingShot(polygon,{x:100,y:200})
+  slingShot = new SlingShot(polygon,{x:200,y:200})
 	
 	Engine.run(engine);
  
@@ -88,3 +88,4 @@ function mouseDragged(){
 function mouseReleased(){
   slingShot.fly();
 }
+
